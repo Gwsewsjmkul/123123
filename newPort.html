@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renier Navarro | Frontend Developer &amp; Athlete</title>
+
+  <link rel="stylesheet" href="Newport.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background video -->
+  <div class="background">
+    <video autoplay loop muted playsinline>
+      <source src="Images/Background.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <header class="header" id="siteHeader">
+    <nav class="nav_container">
+      <div class="nav__bar">
+        <a href="#top" class="nav__brand">
+          <img src="Images/my_logos.jpg" alt="Renier Navarro Logo" class="nav__logo">
+        </a>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navList">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav__list" id="navList">
+          <li><a href="#about" class="nav__link" data-nav-link>About</a></li>
+          <li><a href="#skills" class="nav__link" data-nav-link>Skills</a></li>
+          <li><a href="#achievements" class="nav__link" data-nav-link>Achievements</a></li>
+          <li><a href="#contact" class="nav__link nav__link--btn" data-nav-link>Contact</a></li>
+          <li>
+            <button type="button" id="themeToggle" class="theme-toggle" aria-label="Switch to light mode" aria-pressed="false">
+              <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="my_container">
+      <div class="picframe">
+        <a href="https://www.facebook.com/profile.php?id=61579801083519" target="_blank" rel="noopener noreferrer">
+          <img src="Images/Renier.jpg" alt="Renier Navarro" class="mypicture">
+        </a>
+      </div>
+
+      <div class="my_content">
+        <span class="my_subtitle">Student Athlete &amp; Developer</span>
+        <h1 class="my_title">Renier Navarro</h1>
+        <p class="my_description">
+          Frontend developer building clean web solutions, paired with the drive and discipline of a championship-level athlete.
+        </p>
+        <div class="my_cta">
+          <a href="#achievements" class="btn btn--primary">View Track Record</a>
+          <a href="#contact" class="btn btn--secondary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Where I live / studied -->
+    <section id="about" class="section container">
+      <h2 class="section__title">Origins</h2>
+
+      <div class="about-block">
+        <p class="about-block__label">📍 Where I Was Born</p>
+        <div class="card origin-card">
+          <div class="origin-card__info">
+            <a href="https://maps.app.goo.gl/BMxcWsTHodqURRg28" target="_blank" rel="noopener noreferrer">
+              <h3>Philippines Christian University (PCU)</h3>
+              <p>Manila City</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-block">
+        <p class="about-block__label">🏫 My School</p>
+        <div class="card origin-card">
+          <div class="origin-card__info">
+            <a href="https://maps.app.goo.gl/ySpy9cZxZVwHuqb77" target="_blank" rel="noopener noreferrer">
+              <h3>Philippines Christian University (PCU)</h3>
+              <p>Manila City</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container">
+      <h2 class="section__title">Tech &amp; Capabilities</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-card__icon">&lt;/&gt;</span>
+          <h3 class="skill-card__title">Frontend Development</h3>
+          <p class="skill-card__desc">HTML, CSS, modern JavaScript layout architectures.</p>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-card__icon">⚙️</span>
+          <h3 class="skill-card__title">Computer Technician</h3>
+          <p class="skill-card__desc">System diagnostics, hardware assembly, and troubleshooting.</p>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-card__icon">🚴</span>
+          <h3 class="skill-card__title">Bike Mechanic</h3>
+          <p class="skill-card__desc">Drivetrain repair, wheel truing, and component maintenance.</p>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-card__icon">🎛️</span>
+          <h3 class="skill-card__title">Sound Tech</h3>
+          <p class="skill-card__desc">Live audio routing, equipment set up, and signal chain management.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section container">
+      <h2 class="section__title">Track Record</h2>
+
+      <div class="filter-bar" role="group" aria-label="Filter achievements by category">
+        <button type="button" class="filter-pill is-active" data-filter="all">All</button>
+        <button type="button" class="filter-pill" data-filter="sports">Badminton &amp; Sports</button>
+        <button type="button" class="filter-pill" data-filter="cycling">Cycling &amp; Endurance</button>
+      </div>
+
+      <div class="timeline" id="timelineList">
+
+        <div class="timeline__item" data-category="sports">
+          <span class="timeline__year">2025 – 2026</span>
+          <h3 class="timeline__title">2x NAASCU Badminton Champion</h3>
+          <p class="timeline__meta">Collegiate Level Championship</p>
+        </div>
+
+        <div class="timeline__item" data-category="sports">
+          <span class="timeline__year">2024</span>
+          <h3 class="timeline__title">Kuya Buts Billiards Champion</h3>
+          <p class="timeline__meta">Class C Division Leader</p>
+        </div>
+
+        <div class="timeline__item" data-category="cycling">
+          <span class="timeline__year">2022 – 2023</span>
+          <h3 class="timeline__title">Endurance Cycling Finisher</h3>
+          <p class="timeline__meta">Tour de Tarlac, Tour de Pangasinan, Bwelta Dagupan &amp; Karera De Infanta (2nd Place)</p>
+        </div>
+
+        <div class="timeline__item" data-category="sports">
+          <span class="timeline__year">2018 – 2023</span>
+          <h3 class="timeline__title">CLARAA Athletics</h3>
+          <p class="timeline__meta">Men's Singles Qualifier (2023) &amp; Men's Doubles Rank 4 (2018)</p>
+        </div>
+
+      </div>
+
+      <p class="filter-empty" id="filterEmpty" hidden>No achievements in this category yet.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="footer__content container">
+      <h2>Let's build or compete together.</h2>
+      <p>Available for tech roles and athletic opportunities.</p>
+      <div class="footer__links">
+        <a href="tel:09950230209" class="footer__link">📱 +63 995 023 0209</a>
+        <a href="mailto:nreniernavarro@gmail.com" class="footer__link">✉️ nreniernavarro@gmail.com</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Renier Navarro. Engineered with HTML &amp; CSS.</p>
+    </div>
+  </footer>
+
+  <!-- AI Assistant Chat Widget -->
+  <div class="chatbot" id="chatbot">
+    <button type="button" class="chatbot__launcher" id="chatbotLauncher" aria-label="Open Renier's AI Assistant" aria-expanded="false" aria-controls="chatbotWindow">
+      <span class="chatbot__launcher-icon" id="chatbotLauncherIcon">💬</span>
+    </button>
+
+    <div class="chatbot__window" id="chatbotWindow" role="dialog" aria-label="Renier's AI Assistant" hidden>
+      <div class="chatbot__header">
+        <div class="chatbot__header-info">
+          <span class="chatbot__avatar">🤖</span>
+          <div>
+            <p class="chatbot__title">Renier's AI Assistant</p>
+            <p class="chatbot__status" id="chatbotStatus">Online &middot; Ask me anything</p>
+          </div>
+        </div>
+        <div class="chatbot__header-actions">
+          <button type="button" class="chatbot__icon-btn" id="chatbotMinimize" aria-label="Minimize chat" title="Minimize">&#8212;</button>
+          <button type="button" class="chatbot__icon-btn" id="chatbotClose" aria-label="Close chat" title="Close">&times;</button>
+        </div>
+      </div>
+
+      <div class="chatbot__body" id="chatbotBody">
+        <div class="chatbot__msg chatbot__msg--bot">
+          Hi, I'm Renier's AI Assistant 👋 Ask me about his sports titles, tech skills, or how to reach him.
+        </div>
+      </div>
+
+      <div class="chatbot__quick-replies" id="chatbotQuickReplies">
+        <button type="button" class="chatbot__pill" data-query="sports">🏸 Sports Titles</button>
+        <button type="button" class="chatbot__pill" data-query="skills">💻 Tech Skills</button>
+        <button type="button" class="chatbot__pill" data-query="contact">✉️ Contact Info</button>
+      </div>
+
+      <form class="chatbot__input-row" id="chatbotForm">
+        <input type="text" id="chatbotInput" class="chatbot__input" placeholder="Type a message…" autocomplete="off" aria-label="Type a message">
+        <button type="submit" class="chatbot__send" aria-label="Send message">➤</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="newport.js"></script>
+</body>
+</html>
